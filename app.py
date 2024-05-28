@@ -14,9 +14,6 @@ from datetime import datetime, timezone
 app = Flask(__name__)
 CORS(app)
 
-# Global variable to store songs data
-# songs_df = pd.read_csv('music.csv')
-                            
 
 @app.route('/')
 def setup():
