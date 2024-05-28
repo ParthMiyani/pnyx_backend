@@ -230,8 +230,6 @@ def get_suggested_artists():
     suggestions = [{"id":a[0], "name":a[1]} for a in artists]
     return jsonify(suggestions), 200
 
-# Load songs data
-songs_df = pd.read_csv('music.csv')  # Update the path to your music.csv file
 
 @app.route('/recommend', methods=['GET'])
 def recommend_songs():
